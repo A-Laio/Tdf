@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SVG Display</title>
+  <title>Exibição de Imagens SVG</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="svg-gallery">
-    <div class="svg-item"><img src="svg1.svg" alt="SVG 1"></div>
-    <div class="svg-item"><img src="svg2.svg" alt="SVG 2"></div>
-    <div class="svg-item"><img src="svg3.svg" alt="SVG 3"></div>
-    <div class="svg-item"><img src="svg4.svg" alt="SVG 4"></div>
-    <div class="svg-item"><img src="svg5.svg" alt="SVG 5"></div>
-    <div class="svg-item"><img src="svg6.svg" alt="SVG 6"></div>
-    <div class="svg-item"><img src="svg7.svg" alt="SVG 7"></div>
-    <div class="svg-item"><img src="svg8.svg" alt="SVG 8"></div>
+    <div class="svg-item"><a href="svg1.svg" class="lightbox"><img src="svg1.svg" alt="SVG 1"></a></div>
+    <div class="svg-item"><a href="svg2.svg" class="lightbox"><img src="svg2.svg" alt="SVG 2"></a></div>
+    <div class="svg-item"><a href="svg3.svg" class="lightbox"><img src="svg3.svg" alt="SVG 3"></a></div>
+    <div class="svg-item"><a href="svg4.svg" class="lightbox"><img src="svg4.svg" alt="SVG 4"></a></div>
+    <div class="svg-item"><a href="svg5.svg" class="lightbox"><img src="svg5.svg" alt="SVG 5"></a></div>
+    <div class="svg-item"><a href="svg6.svg" class="lightbox"><img src="svg6.svg" alt="SVG 6"></a></div>
+    <div class="svg-item"><a href="svg7.svg" class="lightbox"><img src="svg7.svg" alt="SVG 7"></a></div>
+    <div class="svg-item"><a href="svg8.svg" class="lightbox"><img src="svg8.svg" alt="SVG 8"></a></div>
+    <div class="svg-item"><a href="svg9.svg" class="lightbox"><img src="svg9.svg" alt="SVG 9"></a></div>
   </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox-modal">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Imagem em tamanho grande">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
