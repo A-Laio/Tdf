@@ -1,0 +1,45 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Gallery container */
+.svg-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px;
+}
+
+/* Individual SVG item styling */
+.svg-item img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Prevents overflow */
+  max-height: 500px; /* Adjust height for large SVGs */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .svg-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .svg-gallery {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}
