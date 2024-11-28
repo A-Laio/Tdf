@@ -53,6 +53,13 @@ p {
   color: #0056b3; /* Cor ao passar o mouse */
 }
 
+/* Ajustar o estilo do parágrafo da legenda */
+header p {
+  font-size: 1.1em;
+  color: #666;
+  margin-top: 5px;  /* Margem superior do parágrafo da legenda */
+}
+
 /* Estilos para a galeria */
 .svg-gallery {
   display: grid;
