@@ -11,7 +11,7 @@ body {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Assegura que o conteúdo não fique sobrepondo */
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -28,6 +28,8 @@ h1 {
   font-size: 2em;
   margin: 0;
   color: #333;
+  font-weight: bold; /* Título em negrito */
+  text-transform: uppercase; /* Título em caixa alta */
 }
 
 p {
@@ -56,8 +58,8 @@ p {
 .svg-item img {
   width: 100%;
   height: auto;
-  max-width: 100%; /* Garante que as imagens não transbordem */
-  max-height: 400px; /* Limite de altura para as imagens */
+  max-width: 100%;
+  max-height: 400px;
   display: block;
   margin: 0 auto;
 }
@@ -65,7 +67,7 @@ p {
 .svg-item .image-number {
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  left: 10px; /* Numeral no canto inferior esquerdo */
   font-size: 24px;
   font-weight: bold;
   color: white;
@@ -102,10 +104,16 @@ p {
 }
 
 .lightbox-modal img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 95%; /* Aumentando o tamanho da imagem no lightbox */
+  max-height: 95%;
   margin: 0 auto;
   display: block;
+  transform: scale(1.1); /* Zoom adicional na imagem expandida */
+  transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+.lightbox-modal img:hover {
+  transform: scale(1.2); /* Zoom ainda maior quando a imagem for hover */
 }
 
 .close {
