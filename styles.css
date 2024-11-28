@@ -38,6 +38,21 @@ p {
   margin-top: 10px;
 }
 
+/* Novo estilo para o link "Ver mapas em PDF" */
+.pdf-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.pdf-link:hover {
+  color: #0056b3; /* Cor ao passar o mouse */
+}
+
 /* Estilos para a galeria */
 .svg-gallery {
   display: grid;
@@ -123,25 +138,3 @@ p {
   max-width: 95%; /* Aumentando o tamanho da imagem no lightbox */
   max-height: 95%;
   margin: 0 auto;
-  display: block;
-  transform: scale(1.1); /* Zoom adicional na imagem expandida */
-  transition: transform 0.3s ease; /* Transição suave para o zoom */
-}
-
-.lightbox-modal img:hover {
-  transform: scale(1.2); /* Zoom ainda maior quando a imagem for hover */
-}
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.close:hover {
-  color: #ccc;
-}
