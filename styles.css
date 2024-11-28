@@ -52,7 +52,8 @@ p {
 }
 
 .svg-item {
-  position: relative; /* Necessário para posicionar o número dentro do item */
+  position: relative;
+  text-align: center;
 }
 
 .svg-item img {
@@ -74,6 +75,21 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+/* Link abaixo da imagem */
+.image-link {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.image-link:hover {
+  color: #0056b3; /* Cor ao passar o mouse */
 }
 
 /* Design responsivo */
