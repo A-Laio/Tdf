@@ -41,8 +41,8 @@ p {
 /* Estilo para o link "Ver mapas em PDF" */
 .pdf-link {
   display: inline-block;
-  margin-top: 5px;
-  font-size: 12px;
+  margin-top: 0px;
+  font-size: 14px;
   font-weight: normal;
   color: #007bff;
   text-decoration: none;
