@@ -1,32 +1,42 @@
-/* Estilos gerais da página */
-body {
-  font-family: Arial, sans-serif;
+/* Definir a fonte padrão para todo o site */
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-  text-align: center;
+  font-family: 'Noto Sans', sans-serif; /* Fonte Noto Sans */
 }
 
+/* Estilos gerais do corpo */
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Assegura que o conteúdo não fique sobrepondo */
+  align-items: center;
+}
+
+/* Cabeçalho */
 header {
-  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   font-size: 2em;
+  margin: 0;
   color: #333;
 }
 
 p {
   font-size: 1.1em;
   color: #666;
+  margin-top: 10px;
 }
 
-/* Contêiner da galeria */
+/* Estilos para a galeria */
 .svg-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 colunas */
@@ -34,22 +44,34 @@ p {
   max-width: 1200px;
   width: 100%;
   margin: 20px;
+  padding: 20px;
+  flex-grow: 1;
+  box-sizing: border-box;
 }
 
-/* Estilos dos itens SVG */
+.svg-item {
+  position: relative; /* Necessário para posicionar o número dentro do item */
+}
+
 .svg-item img {
   width: 100%;
   height: auto;
   max-width: 100%; /* Garante que as imagens não transbordem */
-  max-height: 400px; /* Ajuste a altura para imagens grandes */
+  max-height: 400px; /* Limite de altura para as imagens */
   display: block;
   margin: 0 auto;
 }
 
-.svg-item p {
-  font-size: 1em;
-  margin-top: 10px;
-  color: #333;
+.svg-item .image-number {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 /* Design responsivo */
@@ -65,7 +87,7 @@ p {
   }
 }
 
-/* Lightbox */
+/* Lightbox (modal) */
 .lightbox-modal {
   display: none; /* Inicialmente escondido */
   position: fixed;
