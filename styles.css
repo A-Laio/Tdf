@@ -12,6 +12,20 @@ body {
   text-align: center;
 }
 
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+p {
+  font-size: 1.1em;
+  color: #666;
+}
+
 /* Contêiner da galeria */
 .svg-gallery {
   display: grid;
@@ -27,9 +41,15 @@ body {
   width: 100%;
   height: auto;
   max-width: 100%; /* Garante que as imagens não transbordem */
-  max-height: 500px; /* Ajuste a altura para imagens grandes */
+  max-height: 400px; /* Ajuste a altura para imagens grandes */
   display: block;
   margin: 0 auto;
+}
+
+.svg-item p {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #333;
 }
 
 /* Design responsivo */
